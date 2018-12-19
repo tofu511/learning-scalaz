@@ -1,4 +1,4 @@
-object IntMonoid {
+object IntMonoid extends Monoid[Int] {
   def mappend(a: Int, b: Int): Int = a + b
   def mzero: Int = 0
 
