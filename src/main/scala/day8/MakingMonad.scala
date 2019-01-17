@@ -49,5 +49,8 @@ object MakingMonad {
 
     val res6 = p1 >>= (x => p2 map (y => (x * y).point[Prob]))
     println(res6) // Prob(List((Prob(List((15,1.0))),0.15), (Prob(List((30,1.0))),0.1), (Prob(List((9,1.0))),0.35), (Prob(List((25,1.0))),0.075), (Prob(List((50,1.0))),0.05), (Prob(List((15,1.0))),0.175), (Prob(List((45,1.0))),0.075), (Prob(List((90,1.0))),0.05), (Prob(List((27,1.0))),0.175)))
+
+    val res7 = Coin.flipThree
+    println(res7) // Prob(List((false,0.025), (false,0.225), (false,0.025), (false,0.225), (false,0.025), (false,0.225), (false,0.025), (true,0.225)))
   }
 }
